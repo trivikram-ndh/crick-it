@@ -29,7 +29,8 @@ export const setsearchlist = (seriesList) => (
 )
 
 const intialState = {
-    seriesState: null
+    seriesState: null,
+    searchSeries: null
 }
 
 const seriesReducer = (state = intialState,  action) => {
@@ -40,8 +41,10 @@ const seriesReducer = (state = intialState,  action) => {
             // console.log("set series", series);
             return {...state, seriesState: series};
         case SET_SEARCH_LIST:
+            const { series_search } = action;
+            console.log("dataaaaaaaaaaaaaa", action)
             // console.log("set series search", action.series);
-            return {seriesState: action.series};
+            return {...state, searchSeries: series_search};
         default:
             return state;
     }

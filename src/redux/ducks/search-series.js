@@ -9,12 +9,13 @@ export const getsearchlist = (payload) => {
     })
 }
 
-export const setsearchlist = (seriesList) => (
-    {
+export const setsearchlist = (seriesList) => {
+    console.log("actionnnnnn", seriesList)
+    return ({
         type: SET_SEARCH_LIST,
         series: seriesList
-    }
-)
+    })
+}
 
 const intialState = {
     seriesState: null,

@@ -3,7 +3,7 @@ import { GET_SERIES } from "../ducks/series";
 import { handleGetseries } from "./handlers/series";
 import { GET_MATCH } from "../ducks/match";
 import { handleGetmatch } from "./handlers/match";
-import { GET_SEARCH_LIST } from "../ducks/search-series";
+import { GET_SEARCH_LIST } from "../ducks/series";
 import { handleGetSearchlist } from "./handlers/search-series";
 
 export function* watcherSaga() {

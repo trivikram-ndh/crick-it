@@ -14,9 +14,9 @@ const SeriesSearch = () =>{
       }, [dispatch]);
     const [searchInput, setSearchInput] = useState('');
     const searchItems = (searchValue) => {
-        // console.log("searchValue", searchValue.length);
-        if( searchValue.length === 0 ){
-            searchBtn();
+        // console.log("searchValue", searchValue);
+        if( !searchValue ){
+            dispatch(getsearchlist(searchValue))
         }
         setSearchInput(searchValue);
     }

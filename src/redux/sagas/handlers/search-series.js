@@ -1,5 +1,5 @@
 import { call, put } from "redux-saga/effects";
-import { setsearchlist } from "../../ducks/search-series";
+import { setsearchlist } from "../../ducks/series";
 import requestGetSearchlist from "../requests/search-series";
 
 export function* handleGetSearchlist({searchTxt}) {
