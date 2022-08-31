@@ -6,7 +6,9 @@ import SeriesSearch from "../../component/seriesSearch";
 import CreateList from "../../component/createList";
 
 const Home = () =>{
-
+    const [test, setTest] = useState('value');
+    console.log("test", test);
+    console.log("set test", setTest);
     return (
         <Container maxWidth="sm" sx={{ marginTop: '25px' }}>
             <CreateList />
